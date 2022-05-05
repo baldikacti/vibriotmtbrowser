@@ -14,7 +14,9 @@ bodyGOI <- fluidRow(box(
                        value = "WP_000653994.1"),
              actionButton(inputId = "action", label = "Submit"),
              hr(),
-             DT::dataTableOutput("gene_info")
+             DT::dataTableOutput("gene_info"),
+             hr(),
+             downloadButton("downloadData", "Download All")
     )
   )
 ),
